@@ -1,0 +1,41 @@
+id: formDropdownOption
+name: Form Dropdown Option
+created: '2025-11-27T15:01:27.842641+00:00'
+updated: '2025-11-27T15:03:45.188525+00:00'
+slugSettings: {}
+useTeamPermissions: true
+fields:
+  - id: label
+    name: Label
+    type: text
+    guidance: Display text for the option
+    localizable: true
+  - id: value
+    name: Value
+    type: text
+    guidance: Value submitted with the form
+    localizable: false
+  - id: name
+    name: Name
+    type: text
+    guidance: Descriptive name for this option (e.g., 'United States', 'Option 1')
+    localizable: false
+  - id: options
+    name: Options
+    type: multi-select
+    guidance: Select special options for this field (default, hidden, disabled)
+    typeConfig:
+      options:
+        - text: Default
+          value: default
+        - text: Hidden
+          value: hidden
+        - text: Disabled
+          value: disabled
+    localizable: false
+entryName: label
+description: An option for form dropdown fields
+icon: file-document
+type: contentType
+permissions: []
+previewConfigurations: []

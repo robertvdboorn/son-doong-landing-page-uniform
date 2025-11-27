@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: formTextField
+name: Form Text Field
+icon: screen
+parameters:
+  - id: name
+    name: Field Name
+    type: text
+    guidance: Unique identifier for this field (e.g., 'email', 'first-name')
+  - id: label
+    name: Label
+    type: text
+    guidance: Label displayed above the field
+    localizable: true
+  - id: placeholder
+    name: Placeholder
+    type: text
+    guidance: Placeholder text inside the field
+    localizable: true
+  - id: type
+    name: Input Type
+    type: select
+    guidance: Type of text input (text, email, or password)
+    typeConfig:
+      options:
+        - text: Text
+          value: text
+        - text: Email
+          value: email
+        - text: Password
+          value: password
+  - id: rows
+    name: Rows
+    type: select
+    guidance: >-
+      Number of text rows. Use 1 for single line input, or 5/7/10 for multiline
+      textarea (resizable by user)
+    typeConfig:
+      options:
+        - text: 1 (Single Line)
+          value: '1'
+        - text: 5 (Small)
+          value: '5'
+        - text: 7 (Medium)
+          value: '7'
+        - text: 10 (Large)
+          value: '10'
+  - id: required
+    name: Required
+    type: checkbox
+    guidance: Whether this field must be filled out
+description: Text input field for forms. Supports text, email, and password types.
+useTeamPermissions: true
+slots: []
+titleParameter: name
+canBeComposition: false
+created: '2025-11-27T15:01:40.981596+00:00'
+updated: '2025-11-27T15:34:07.172768+00:00'

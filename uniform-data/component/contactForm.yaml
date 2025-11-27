@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: contactForm
+name: Contact Form
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: >-
+      Form title displayed above the form fields (e.g., 'Send Inquiry', 'Contact
+      Us')
+    localizable: true
+  - id: formIdentifier
+    name: Form Identifier
+    type: text
+    guidance: >-
+      Unique identifier for this form (used for tracking submissions, e.g.,
+      'contact-form', 'inquiry-form')
+description: >-
+  A contact form with name, email, and message fields. Designed for inquiry and
+  contact collection.
+useTeamPermissions: true
+slots:
+  - id: formFields
+    name: Form Fields
+    minComponents: 1
+    allowedComponents:
+      - formTextField
+      - formCheckboxField
+      - formDropdownField
+      - formRadioField
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: formButtons
+    name: Form Buttons
+    maxComponents: 3
+    minComponents: 1
+    allowedComponents:
+      - formButton
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: title
+canBeComposition: false
+created: '2025-11-27T15:27:28.17388+00:00'
+updated: '2025-11-27T15:29:34.426495+00:00'

@@ -1,0 +1,23 @@
+composition:
+  _name: Feature - Eco-Friendly Caving
+  _id: 15c26c46-01dc-4900-b631-7539031f6427
+  type: featureCard
+  parameters:
+    title:
+      type: text
+      value: Eco-Friendly Caving
+    description:
+      type: text
+      value: >-
+        We are dedicated to protecting and maintaining the cave's unique
+        ecosystem for future generations.
+  _overridability:
+    parameters:
+      title: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T14:46:58.307258+00:00'
+modified: '2025-11-27T14:46:58.307258+00:00'
+pattern: true

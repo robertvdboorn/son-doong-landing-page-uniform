@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: journeyPhaseCard
+name: Journey Phase Card
+icon: screen
+parameters:
+  - id: number
+    name: Number
+    type: text
+    guidance: Phase number (e.g., '01', '02', '03', '04')
+  - id: title
+    name: Title
+    type: text
+    guidance: Phase title (e.g., 'Briefing & Prep', 'The Trek')
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Phase description (2-3 sentences)
+    localizable: true
+description: >-
+  A numbered card for displaying journey phases or process steps. Shows a large
+  number, title, and description.
+useTeamPermissions: true
+slots: []
+titleParameter: number
+canBeComposition: false
+created: '2025-11-27T14:44:30.054143+00:00'
+updated: '2025-11-27T14:44:30.054143+00:00'

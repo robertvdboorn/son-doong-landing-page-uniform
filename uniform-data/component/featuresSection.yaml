@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: featuresSection
+name: Features Section
+icon: screen
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    guidance: Main section heading (e.g., 'Why Choose Us', 'Our Features')
+    localizable: true
+  - id: subheading
+    name: Subheading
+    type: text
+    guidance: Section subheading or description (1-2 sentences)
+    localizable: true
+description: >-
+  A section showcasing key features or benefits in a responsive grid layout.
+  Features centered heading and subheading.
+useTeamPermissions: true
+slots:
+  - id: features
+    name: Features
+    maxComponents: 8
+    minComponents: 1
+    allowedComponents:
+      - featureCard
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: heading
+canBeComposition: false
+created: '2025-11-27T14:44:41.720364+00:00'
+updated: '2025-11-27T14:48:11.489599+00:00'

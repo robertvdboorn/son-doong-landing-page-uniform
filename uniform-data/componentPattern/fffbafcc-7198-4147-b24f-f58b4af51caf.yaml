@@ -1,0 +1,23 @@
+composition:
+  _name: Feature - All-Inclusive Package
+  _id: fffbafcc-7198-4147-b24f-f58b4af51caf
+  type: featureCard
+  parameters:
+    title:
+      type: text
+      value: All-Inclusive Package
+    description:
+      type: text
+      value: >-
+        Permits, gear, meals, and transport are all included for a hassle-free
+        experience.
+  _overridability:
+    parameters:
+      title: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T14:46:56.057202+00:00'
+modified: '2025-11-27T14:46:56.057202+00:00'
+pattern: true

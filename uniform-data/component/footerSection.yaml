@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: footerSection
+name: Footer Section
+icon: screen
+parameters:
+  - id: brandName
+    name: Brand Name
+    type: text
+    guidance: Company or brand name displayed in footer
+    localizable: true
+  - id: brandDescription
+    name: Brand Description
+    type: text
+    guidance: Brief brand description (2-3 sentences)
+    localizable: true
+  - id: newsletterTitle
+    name: Newsletter Title
+    type: text
+    guidance: Title for the newsletter signup section (e.g., 'Get Expedition Updates')
+    localizable: true
+  - id: newsletterPlaceholder
+    name: Newsletter Placeholder
+    type: text
+    guidance: Placeholder text for the email input (e.g., 'Enter your email')
+    localizable: true
+  - id: newsletterButtonText
+    name: Newsletter Button Text
+    type: text
+    guidance: Text for the subscribe button (e.g., 'Subscribe', 'Sign Up')
+    localizable: true
+  - id: showNewsletter
+    name: Show Newsletter
+    type: checkbox
+    guidance: Whether to display the newsletter signup form
+  - id: copyright
+    name: Copyright
+    type: text
+    guidance: Copyright text (e.g., '© 2025 Company Name')
+    localizable: true
+description: >-
+  Comprehensive site footer with brand info, link sections, newsletter signup,
+  and copyright. Features responsive grid layout.
+useTeamPermissions: true
+slots:
+  - id: linkSections
+    name: Link Sections
+    maxComponents: 5
+    minComponents: 1
+    allowedComponents:
+      - footerLinkSection
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: brandName
+canBeComposition: false
+created: '2025-11-27T14:44:52.635638+00:00'
+updated: '2025-11-27T15:23:08.726185+00:00'

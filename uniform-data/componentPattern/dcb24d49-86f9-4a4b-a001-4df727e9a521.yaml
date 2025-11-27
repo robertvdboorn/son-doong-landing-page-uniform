@@ -1,0 +1,38 @@
+composition:
+  _name: FAQ Section
+  _id: dcb24d49-86f9-4a4b-a001-4df727e9a521
+  type: faqSection
+  parameters:
+    heading:
+      type: text
+      value: Frequently Asked Questions
+    description:
+      type: text
+      value: >-
+        Find answers to common questions about the expedition, including
+        physical requirements, booking details, and what to expect on your
+        adventure.
+  slots:
+    items:
+      - _id: f1111111-1111-1111-1111-111111111111
+        type: faqItem
+        _pattern: 8948f8ad-f3c3-4380-b5d5-1db952cf1441
+      - _id: f2222222-2222-2222-2222-222222222222
+        type: faqItem
+        _pattern: ac2bded7-a8f8-4ffa-9d47-464a909a531e
+      - _id: f3333333-3333-3333-3333-333333333333
+        type: faqItem
+        _pattern: 9af67b52-4409-490c-aa5c-7b5bae99391f
+      - _id: f4444444-4444-4444-4444-444444444444
+        type: faqItem
+        _pattern: af4548f6-e47f-4f67-a747-e580bc22015b
+  _overridability:
+    parameters:
+      heading: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T13:59:27.386924+00:00'
+modified: '2025-11-27T15:37:20.057403+00:00'
+pattern: true

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: featureCard
+name: Feature Card
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Feature title (e.g., 'Expert-Led Tours', 'World-Class Safety')
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Brief feature description (1-2 sentences)
+    localizable: true
+description: >-
+  A card for displaying key features with icon, title, and description. Used in
+  feature grids.
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2025-11-27T14:44:28.442154+00:00'
+updated: '2025-11-27T14:44:28.442154+00:00'

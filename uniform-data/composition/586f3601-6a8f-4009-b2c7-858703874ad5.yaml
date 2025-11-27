@@ -1,0 +1,54 @@
+composition:
+  _name: Home
+  _id: 586f3601-6a8f-4009-b2c7-858703874ad5
+  _slug: ':locale'
+  type: page
+  slots:
+    body:
+      - _id: 6624deaa-ea66-4cad-a92e-9e8706b6b8ca
+        type: hero
+        _pattern: b8c598f7-251b-4749-9e3b-93a72a0cedff
+      - _id: 8ae6c3c4-48e2-4028-b0fc-b8107b47c8aa
+        type: featuresSection
+        _pattern: 2fa993b7-1834-4100-935e-4d7c009e4b35
+      - _id: 2a7ada57-5dab-4a70-900a-8114f6a8407a
+        type: journeySection
+        _pattern: 42bfbad0-15f5-4999-9213-6d2dc9aeb071
+      - _id: ae7e630e-c9b9-4859-9180-fe76dd95e5fc
+        type: faqSection
+        _pattern: dcb24d49-86f9-4a4b-a001-4df727e9a521
+      - _id: 80048310-3d6f-46e0-a912-00274116f3f8
+        type: contactSection
+        _pattern: 68c06fcd-5095-49ac-84e8-3ed86aa53bb8
+    footer:
+      - _id: 50c013d6-760b-4968-ae21-3489f239a5f9
+        type: footerSection
+        _pattern: 78200baa-b34f-4bfc-abc5-ab3c60698732
+    header:
+      - _id: 4b1bb096-8f6c-40c8-bab0-ac3356ff03db
+        type: navigation
+        _pattern: 268a45fb-9e6e-44e4-b36e-d803cce4661f
+  _overrides:
+    50c013d6-760b-4968-ae21-3489f239a5f9:
+      parameters:
+        showNewsletter:
+          type: checkbox
+          value: true
+    6624deaa-ea66-4cad-a92e-9e8706b6b8ca:
+      parameters:
+        showBadge:
+          type: checkbox
+          value: true
+        description:
+          type: text
+          value: |+
+            Experience the world's largest cave. A journey beyond imagination.
+
+        showFooterNote:
+          type: checkbox
+          value: true
+  _locales:
+    - en-US
+created: '2025-11-27T13:43:50.425583+00:00'
+modified: '2025-11-27T15:29:36.343293+00:00'
+pattern: false

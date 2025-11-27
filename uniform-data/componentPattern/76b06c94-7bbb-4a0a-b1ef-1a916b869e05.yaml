@@ -1,0 +1,28 @@
+composition:
+  _name: Journey Phase - 01 Briefing & Prep
+  _id: 76b06c94-7bbb-4a0a-b1ef-1a916b869e05
+  type: journeyPhaseCard
+  parameters:
+    title:
+      type: text
+      value: Briefing & Prep
+    number:
+      type: text
+      value: '01'
+    description:
+      type: text
+      value: >-
+        Your adventure begins in Phong Nha, where you'll receive a comprehensive
+        safety briefing and a thorough equipment check. This ensures you are
+        fully prepared and confident before setting out on your trek.
+  _overridability:
+    parameters:
+      title: 'yes'
+      number: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T14:48:58.05903+00:00'
+modified: '2025-11-27T14:48:58.05903+00:00'
+pattern: true

@@ -1,0 +1,372 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Nature-promoting color palette with earthy tones */
+  --background: oklch(0.97 0.01 75);
+  --foreground: oklch(0.25 0.03 145);
+  --card: oklch(0.98 0.008 75);
+  --card-foreground: oklch(0.25 0.03 145);
+  --popover: oklch(0.98 0.008 75);
+  --popover-foreground: oklch(0.25 0.03 145);
+  --primary: oklch(0.35 0.08 155);
+  --primary-foreground: oklch(0.98 0.008 75);
+  --secondary: oklch(0.85 0.02 50);
+  --secondary-foreground: oklch(0.25 0.03 145);
+  --muted: oklch(0.92 0.015 75);
+  --muted-foreground: oklch(0.5 0.02 145);
+  --accent: oklch(0.88 0.04 85);
+  --accent-foreground: oklch(0.25 0.03 145);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.88 0.015 75);
+  --input: oklch(0.88 0.015 75);
+  --ring: oklch(0.35 0.08 155);
+  --chart-1: oklch(0.5 0.12 145);
+  --chart-2: oklch(0.65 0.1 85);
+  --chart-3: oklch(0.55 0.08 120);
+  --chart-4: oklch(0.7 0.09 65);
+  --chart-5: oklch(0.45 0.1 160);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.98 0.008 75);
+  --sidebar-foreground: oklch(0.25 0.03 145);
+  --sidebar-primary: oklch(0.35 0.08 155);
+  --sidebar-primary-foreground: oklch(0.98 0.008 75);
+  --sidebar-accent: oklch(0.88 0.04 85);
+  --sidebar-accent-foreground: oklch(0.25 0.03 145);
+  --sidebar-border: oklch(0.88 0.015 75);
+  --sidebar-ring: oklch(0.35 0.08 155);
+}
+
+.dark {
+  /* Dark theme - nature-inspired earth tones */
+  --background: oklch(0.2 0.02 145);
+  --foreground: oklch(0.97 0.01 75);
+  --card: oklch(0.25 0.025 145);
+  --card-foreground: oklch(0.97 0.01 75);
+  --popover: oklch(0.25 0.025 145);
+  --popover-foreground: oklch(0.97 0.01 75);
+  --primary: oklch(0.5 0.1 155);
+  --primary-foreground: oklch(0.98 0.008 75);
+  --secondary: oklch(0.35 0.03 50);
+  --secondary-foreground: oklch(0.97 0.01 75);
+  --muted: oklch(0.3 0.02 145);
+  --muted-foreground: oklch(0.65 0.015 75);
+  --accent: oklch(0.45 0.05 85);
+  --accent-foreground: oklch(0.97 0.01 75);
+  --destructive: oklch(0.45 0.22 27);
+  --destructive-foreground: oklch(0.97 0.01 75);
+  --border: oklch(0.3 0.02 145);
+  --input: oklch(0.3 0.02 145);
+  --ring: oklch(0.5 0.1 155);
+  --chart-1: oklch(0.5 0.12 145);
+  --chart-2: oklch(0.65 0.1 85);
+  --chart-3: oklch(0.55 0.08 120);
+  --chart-4: oklch(0.7 0.09 65);
+  --chart-5: oklch(0.6 0.1 160);
+  --sidebar: oklch(0.25 0.025 145);
+  --sidebar-foreground: oklch(0.97 0.01 75);
+  --sidebar-primary: oklch(0.5 0.1 155);
+  --sidebar-primary-foreground: oklch(0.98 0.008 75);
+  --sidebar-accent: oklch(0.45 0.05 85);
+  --sidebar-accent-foreground: oklch(0.97 0.01 75);
+  --sidebar-border: oklch(0.3 0.02 145);
+  --sidebar-ring: oklch(0.5 0.1 155);
+}
+
+@theme inline {
+  --font-sans: "Poppins", "Poppins Fallback", system-ui, -apple-system, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Adding Polaroid frame styles with fade-in and hover effects */
+@layer components {
+  /* Fade-in animation */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+
+  /* Added sparkle animations */
+  /* Sparkle animations */
+  @keyframes sparkle {
+    0%,
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .sparkle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8), 0 0 20px 4px rgba(73, 141, 255, 0.6);
+    animation: sparkle 3s ease-in-out infinite, float 4s ease-in-out infinite;
+  }
+
+  .sparkle-1 {
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+
+  .sparkle-2 {
+    top: 25%;
+    left: 85%;
+    animation-delay: 0.5s;
+  }
+
+  .sparkle-3 {
+    top: 45%;
+    left: 15%;
+    animation-delay: 1s;
+  }
+
+  .sparkle-4 {
+    top: 60%;
+    left: 80%;
+    animation-delay: 1.5s;
+  }
+
+  .sparkle-5 {
+    top: 75%;
+    left: 20%;
+    animation-delay: 2s;
+  }
+
+  .sparkle-6 {
+    top: 35%;
+    left: 50%;
+    animation-delay: 2.5s;
+  }
+
+  .sparkle-7 {
+    top: 85%;
+    left: 70%;
+    animation-delay: 0.8s;
+  }
+
+  .sparkle-8 {
+    top: 20%;
+    left: 40%;
+    animation-delay: 1.8s;
+  }
+
+  /* Added logo marquee animations */
+  /* Logo marquee animations */
+  @keyframes scroll-logos {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes logo-fade-in {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .logo-marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+
+  .logo-track {
+    display: flex;
+    animation: scroll-logos 40s linear infinite;
+    width: fit-content;
+  }
+
+  .logo-track > div {
+    display: flex;
+    gap: 3rem;
+    flex-shrink: 0;
+  }
+
+  .logo-track:hover {
+    animation-play-state: paused;
+  }
+
+  .logo-item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    filter: grayscale(100%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: logo-fade-in 0.6s ease-out forwards;
+  }
+
+  .logo-item:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+
+  /* Polaroid frame container */
+  .polaroid-frame {
+    perspective: 1000px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Polaroid inner wrapper */
+  .polaroid-inner {
+    background: white;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 1px 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 400px;
+  }
+
+  /* Added larger Polaroid frame variant (25% larger: 400px -> 500px) */
+  /* Larger Polaroid frame for hero */
+  .polaroid-frame-large {
+    perspective: 1000px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .polaroid-inner-large {
+    background: white;
+    padding: 1.25rem;
+    padding-bottom: 3.75rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 1px 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 500px;
+  }
+
+  /* Polaroid image */
+  .polaroid-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* Polaroid caption */
+  .polaroid-caption {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  /* Hover effects */
+  .polaroid-frame:hover .polaroid-inner {
+    transform: rotate(0deg) translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Added hover effects for larger Polaroid frame */
+  .polaroid-frame-large:hover .polaroid-inner-large {
+    transform: rotate(0deg) translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .polaroid-inner {
+      transform: rotate(0deg);
+      max-width: 350px;
+    }
+
+    .polaroid-frame:hover .polaroid-inner {
+      transform: rotate(0deg) translateY(-5px) scale(1.02);
+    }
+
+    /* Added responsive adjustments for larger Polaroid */
+    .polaroid-inner-large {
+      transform: rotate(0deg);
+      max-width: 400px;
+    }
+
+    .polaroid-frame-large:hover .polaroid-inner-large {
+      transform: rotate(0deg) translateY(-5px) scale(1.02);
+    }
+  }
+}

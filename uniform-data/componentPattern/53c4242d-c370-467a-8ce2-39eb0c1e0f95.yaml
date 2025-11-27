@@ -1,0 +1,23 @@
+composition:
+  _name: Feature - World-Class Safety
+  _id: 53c4242d-c370-467a-8ce2-39eb0c1e0f95
+  type: featureCard
+  parameters:
+    title:
+      type: text
+      value: World-Class Safety
+    description:
+      type: text
+      value: >-
+        Ensures safety and quality through rigorous protocols and the use of
+        modern equipment.
+  _overridability:
+    parameters:
+      title: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T14:46:54.196115+00:00'
+modified: '2025-11-27T14:46:54.196115+00:00'
+pattern: true

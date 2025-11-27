@@ -1,0 +1,26 @@
+composition:
+  _name: FAQ - Booking Process
+  _id: af4548f6-e47f-4f67-a747-e580bc22015b
+  type: faqItem
+  parameters:
+    answer:
+      type: text
+      value: >-
+        Expeditions are limited to 10 people per group and are available only
+        during the dry season, from February to August. We recommend booking
+        6-12 months in advance through our website. A 50% deposit is required to
+        secure your spot, with the remaining balance due 30 days before
+        departure.
+    question:
+      type: text
+      value: How do I book a spot?
+  _overridability:
+    parameters:
+      answer: 'yes'
+      question: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T13:59:15.983513+00:00'
+modified: '2025-11-27T13:59:15.983513+00:00'
+pattern: true

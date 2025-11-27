@@ -1,0 +1,26 @@
+composition:
+  _name: FAQ - Tour Price Inclusions
+  _id: ac2bded7-a8f8-4ffa-9d47-464a909a531e
+  type: faqItem
+  parameters:
+    answer:
+      type: text
+      value: >-
+        The expedition package includes all necessary permits, professional
+        guides, safety equipment, camping gear, meals during the expedition,
+        transportation from Phong Nha, and emergency evacuation insurance.
+        However, personal items such as clothing and toiletries are not
+        included, so you will need to bring those yourself.
+    question:
+      type: text
+      value: What is included in the tour price?
+  _overridability:
+    parameters:
+      answer: 'yes'
+      question: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T13:59:06.730047+00:00'
+modified: '2025-11-27T13:59:06.730047+00:00'
+pattern: true

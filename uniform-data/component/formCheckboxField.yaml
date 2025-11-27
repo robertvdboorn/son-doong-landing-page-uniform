@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: formCheckboxField
+name: Form Checkbox Field
+icon: screen
+parameters:
+  - id: name
+    name: Field Name
+    type: text
+    guidance: Unique identifier for this field (e.g., 'agree-to-terms', 'subscribe')
+  - id: label
+    name: Label
+    type: text
+    guidance: Label displayed next to the checkbox
+    localizable: true
+  - id: required
+    name: Required
+    type: checkbox
+    guidance: Whether this field must be checked
+description: Checkbox field for forms. Used for yes/no or agree/disagree options.
+useTeamPermissions: true
+slots: []
+titleParameter: name
+canBeComposition: false
+created: '2025-11-27T15:01:43.072847+00:00'
+updated: '2025-11-27T15:01:43.072847+00:00'

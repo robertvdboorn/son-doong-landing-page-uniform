@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 5cd2de3c-b344-454c-969c-285bae0dab95
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: david-luong.jpg
+    file:
+      type: file
+      value: f29560eb-2ca9-4b19-a2ef-81fa45c56b7d
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.eu.uniform.global/p/phDRt_FTRZiOQNJoKIm4_g/S-JqcSODTI-PkNA-93yXsg-david-luong.jpg
+      type: text
+    size:
+      value: 202190
+      type: number
+    width:
+      value: 1500
+      type: number
+    height:
+      value: 1000
+      type: number
+    custom: {}
+created: '2025-11-27T15:35:51.940401+00:00'
+modified: '2025-11-27T15:35:51.940401+00:00'

@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: journeySection
+name: Journey Section
+icon: screen
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    guidance: Main section heading (e.g., 'Your Journey', 'Our Process')
+    localizable: true
+  - id: subheading
+    name: Subheading
+    type: text
+    guidance: Brief description below the heading (1-2 sentences)
+    localizable: true
+description: >-
+  A section displaying a journey or process timeline with numbered phases.
+  Includes heading, phase grid, and CTA button.
+useTeamPermissions: true
+slots:
+  - id: phases
+    name: Phases
+    maxComponents: 8
+    minComponents: 1
+    allowedComponents:
+      - journeyPhaseCard
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: cta
+    name: CTA
+    maxComponents: 1
+    minComponents: 0
+    allowedComponents:
+      - ctaButton
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: heading
+canBeComposition: false
+created: '2025-11-27T14:44:45.089581+00:00'
+updated: '2025-11-27T15:35:20.305191+00:00'

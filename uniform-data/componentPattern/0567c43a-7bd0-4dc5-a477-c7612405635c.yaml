@@ -1,0 +1,25 @@
+composition:
+  _name: CTA Button - Book Now
+  _id: 0567c43a-7bd0-4dc5-a477-c7612405635c
+  type: ctaButton
+  parameters:
+    size:
+      type: select
+      value: lg
+    text:
+      type: text
+      value: Book Now
+    variant:
+      type: select
+      value: primary
+  _overridability:
+    parameters:
+      size: 'yes'
+      text: 'yes'
+      variant: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T13:54:41.56076+00:00'
+modified: '2025-11-27T13:54:41.56076+00:00'
+pattern: true

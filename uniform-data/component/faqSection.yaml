@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: faqSection
+name: FAQ Section
+icon: screen
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    guidance: >-
+      Main section heading (e.g., 'Frequently Asked Questions', 'Common
+      Questions')
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Brief description of the FAQ section (1-2 sentences)
+    localizable: true
+description: >-
+  Frequently Asked Questions section with two-column layout. Features heading
+  and description on left, expandable FAQ items on right. Auto-expands items
+  when selected in Canvas.
+useTeamPermissions: true
+slots:
+  - id: items
+    name: FAQ Items
+    maxComponents: 20
+    minComponents: 1
+    allowedComponents:
+      - faqItem
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: heading
+canBeComposition: false
+created: '2025-11-27T13:58:42.644754+00:00'
+updated: '2025-11-27T13:59:33.546556+00:00'

@@ -1,0 +1,107 @@
+composition:
+  _name: Hero
+  _id: b8c598f7-251b-4749-9e3b-93a72a0cedff
+  type: hero
+  parameters:
+    title:
+      type: text
+      value: Enter a Lost World.
+    badgeIcon:
+      type: select
+      value: Leaf
+    badgeText:
+      type: text
+      value: Limited Group Expeditions
+    showBadge:
+      type: checkbox
+      value: 'true'
+    footerNote:
+      type: text
+      value: Safety is our Priority
+    description:
+      type: text
+      value: >-
+        Experience the world's largest cave—a journey beyond imagination awaits
+        you.
+    footerNoteIcon:
+      type: select
+      value: Shield
+    showFooterNote:
+      type: checkbox
+      value: 'true'
+    backgroundImage:
+      type: asset
+      value:
+        - _id: 4d3d00df-fd7d-4d21-92d9-706c8abca258
+          type: image
+          fields:
+            id:
+              type: text
+              value: fe7c092f-f481-41af-9289-ce1375dc0b50
+            url:
+              value: >-
+                https://img.eu.uniform.global/p/phDRt_FTRZiOQNJoKIm4_g/Bp4XLVxZTAyoC8qCStaV-A-son-doong.jpg
+              type: text
+            file:
+              type: file
+              value: fc9a8601-5029-437e-9bdd-1e8781616dcb
+            size:
+              value: 848184
+              type: number
+            title:
+              type: text
+              value: son-doong.jpg
+            width:
+              value: 1500
+              type: number
+            height:
+              value: 1000
+              type: number
+            mediaType:
+              value: image/jpeg
+              type: text
+          _source: uniform-assets
+          _overrides:
+            fields:
+              focalPoint:
+                type: focalPoint
+                value:
+                  x: 0.56
+                  'y': 0.56
+  slots:
+    primaryCta:
+      - _id: d1111111-1111-1111-1111-111111111111
+        type: ctaButton
+        _pattern: 0567c43a-7bd0-4dc5-a477-c7612405635c
+    secondaryCta:
+      - _id: d2222222-2222-2222-2222-222222222222
+        type: ctaButton
+        _pattern: 6d1633d4-9507-483f-b6ad-d6efdc1d376e
+  _overrides:
+    d1111111-1111-1111-1111-111111111111:
+      parameters:
+        text:
+          type: text
+          value: Book Your Expedition
+    d2222222-2222-2222-2222-222222222222:
+      parameters:
+        text:
+          type: text
+          value: View Itinerary
+  _overridability:
+    parameters:
+      title: 'yes'
+      badgeIcon: 'yes'
+      badgeText: 'yes'
+      showBadge: 'yes'
+      footerNote: 'yes'
+      description: 'yes'
+      footerNoteIcon: 'yes'
+      showFooterNote: 'yes'
+      backgroundImage: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T13:54:57.287311+00:00'
+modified: '2025-11-27T15:41:11.897367+00:00'
+pattern: true

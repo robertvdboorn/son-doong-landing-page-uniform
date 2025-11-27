@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: footerLinkSection
+name: Footer Link Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Section title (e.g., 'COMPANY', 'RESOURCES', 'LEGAL')
+    localizable: true
+description: >-
+  A group of footer links under a title. Used to organize footer navigation into
+  categories.
+useTeamPermissions: true
+slots:
+  - id: links
+    name: Links
+    maxComponents: 10
+    minComponents: 1
+    allowedComponents:
+      - footerLink
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: title
+canBeComposition: false
+created: '2025-11-27T14:44:34.429443+00:00'
+updated: '2025-11-27T14:48:19.090881+00:00'

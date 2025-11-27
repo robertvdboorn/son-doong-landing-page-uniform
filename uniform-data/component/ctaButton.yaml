@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: ctaButton
+name: CTA Button
+icon: screen
+parameters:
+  - id: text
+    name: Text
+    type: text
+    guidance: >-
+      The text displayed on the button (e.g., 'Book Now', 'Learn More', 'Get
+      Started')
+    localizable: true
+  - id: link
+    name: Link
+    type: link
+    guidance: The URL or page this button links to
+  - id: variant
+    name: Variant
+    type: select
+    guidance: Visual style of the button
+    typeConfig:
+      options:
+        - text: Primary (Solid color)
+          value: primary
+        - text: Secondary (Glass effect)
+          value: secondary
+        - text: Outline
+          value: outline
+  - id: size
+    name: Size
+    type: select
+    guidance: Size of the button
+    typeConfig:
+      options:
+        - text: Small
+          value: sm
+        - text: Default
+          value: default
+        - text: Large
+          value: lg
+description: >-
+  Call-to-action button with multiple style variants. Used for primary and
+  secondary actions throughout the site.
+useTeamPermissions: true
+slots: []
+titleParameter: text
+canBeComposition: false
+created: '2025-11-27T13:54:13.047224+00:00'
+updated: '2025-11-27T13:54:13.047224+00:00'

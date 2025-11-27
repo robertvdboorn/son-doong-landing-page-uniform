@@ -1,0 +1,25 @@
+composition:
+  _name: CTA Button - Learn More
+  _id: 6d1633d4-9507-483f-b6ad-d6efdc1d376e
+  type: ctaButton
+  parameters:
+    size:
+      type: select
+      value: lg
+    text:
+      type: text
+      value: Learn More
+    variant:
+      type: select
+      value: secondary
+  _overridability:
+    parameters:
+      size: 'yes'
+      text: 'yes'
+      variant: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T13:54:43.362929+00:00'
+modified: '2025-11-27T13:54:43.362929+00:00'
+pattern: true

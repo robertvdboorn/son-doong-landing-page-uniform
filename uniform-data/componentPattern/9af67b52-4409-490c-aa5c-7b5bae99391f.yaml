@@ -1,0 +1,26 @@
+composition:
+  _name: FAQ - Safety
+  _id: 9af67b52-4409-490c-aa5c-7b5bae99391f
+  type: faqItem
+  parameters:
+    answer:
+      type: text
+      value: >-
+        Safety is our top priority. All of our guides are certified cave rescue
+        specialists, and we use only professional-grade equipment on every tour.
+        We maintain constant communication with our base camp, have
+        comprehensive emergency protocols in place, and continuously monitor
+        weather conditions to ensure a safe experience for all participants.
+    question:
+      type: text
+      value: Is it safe to explore Son Doong Cave?
+  _overridability:
+    parameters:
+      answer: 'yes'
+      question: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T13:59:09.546971+00:00'
+modified: '2025-11-27T13:59:09.546971+00:00'
+pattern: true

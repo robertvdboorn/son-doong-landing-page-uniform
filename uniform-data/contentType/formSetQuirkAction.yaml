@@ -1,0 +1,32 @@
+id: formSetQuirkAction
+name: Form Set Quirk Action
+created: '2025-11-27T15:02:47.280555+00:00'
+updated: '2025-11-27T15:02:47.280555+00:00'
+slugSettings: {}
+useTeamPermissions: true
+fields:
+  - id: name
+    name: Name
+    type: text
+    guidance: >-
+      Descriptive name for this action (e.g., 'Mark as lead', 'Set newsletter
+      subscriber')
+    localizable: false
+  - id: quirkName
+    name: Quirk Name
+    type: text
+    guidance: Name of the quirk to set (e.g., 'formSubmitted', 'newsletterSubscriber')
+    localizable: false
+  - id: quirkValue
+    name: Quirk Value
+    type: text
+    guidance: Value to set for the quirk (e.g., 'true', 'contact-form', 'subscribed')
+    localizable: false
+entryName: name
+description: >-
+  Action to set a Uniform Context quirk when a form is submitted. Use for
+  personalization and A/B testing.
+icon: file-document
+type: contentType
+permissions: []
+previewConfigurations: []

@@ -1,0 +1,27 @@
+composition:
+  _name: FAQ - Physical Requirements
+  _id: 8948f8ad-f3c3-4380-b5d5-1db952cf1441
+  type: faqItem
+  parameters:
+    answer:
+      type: text
+      value: >-
+        The Son Doong expedition demands excellent physical fitness due to its
+        challenging nature. Participants will trek over 15 kilometers through
+        dense jungle, rappel down 80-meter drops, and navigate underground
+        rivers, all while carrying a 15kg backpack. Prior experience in caving
+        or trekking is also required to ensure safety and preparedness for the
+        expedition's rigorous conditions.
+    question:
+      type: text
+      value: How physically demanding is the tour?
+  _overridability:
+    parameters:
+      answer: 'yes'
+      question: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T13:59:04.3681+00:00'
+modified: '2025-11-27T13:59:04.3681+00:00'
+pattern: true

@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: navigation
+name: Navigation
+icon: screen
+parameters:
+  - id: logoText
+    name: Logo Text
+    type: text
+    guidance: The text displayed next to the logo icon (e.g., 'Son Doong', 'Your Brand')
+    localizable: true
+  - id: ctaText
+    name: CTA Text
+    type: text
+    guidance: >-
+      Text for the primary call-to-action button (e.g., 'Book Now', 'Get
+      Started')
+    localizable: true
+  - id: showAuth
+    name: Show Auth Button
+    type: checkbox
+    guidance: Whether to show the login button
+description: >-
+  Main navigation header with glass morphism styling. Features a logo,
+  navigation links slot, and action buttons. Perfect for overlay navigation on
+  hero sections.
+useTeamPermissions: true
+slots:
+  - id: navigationLinks
+    name: Navigation Links
+    maxComponents: 10
+    allowedComponents:
+      - navLink
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: logoText
+canBeComposition: false
+created: '2025-11-27T13:50:04.932772+00:00'
+updated: '2025-11-27T13:51:19.51323+00:00'

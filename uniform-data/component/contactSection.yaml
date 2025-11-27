@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: contactSection
+name: Contact Section
+icon: screen
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    guidance: Main section heading (e.g., 'Contact Our Team', 'Get In Touch')
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Brief description below the heading (1-2 sentences)
+    localizable: true
+description: >-
+  A contact section with inquiry form on left and team member card on right.
+  Includes contact photo, name, role, and bio.
+useTeamPermissions: true
+slots:
+  - id: leftColumn
+    name: Left Column
+    maxComponents: 1
+    minComponents: 0
+    allowedComponents:
+      - contactForm
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: rightColumn
+    name: Right Column
+    maxComponents: 1
+    minComponents: 0
+    allowedComponents:
+      - contactCard
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: heading
+thumbnailParameter: contactImage
+canBeComposition: false
+created: '2025-11-27T14:44:49.198382+00:00'
+updated: '2025-11-27T15:27:39.238822+00:00'

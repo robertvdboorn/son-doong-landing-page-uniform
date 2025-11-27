@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: navLink
+name: Nav Link
+icon: screen
+parameters:
+  - id: text
+    name: Text
+    type: text
+    guidance: >-
+      The text displayed on the navigation link (e.g., 'About', 'Contact', 'Book
+      Now')
+    localizable: true
+  - id: link
+    name: Link
+    type: link
+    guidance: The URL or page this link navigates to
+  - id: variant
+    name: Variant
+    type: select
+    guidance: Visual style of the link
+    typeConfig:
+      options:
+        - text: Glass (Semi-transparent)
+          value: glass
+        - text: Solid (Primary color)
+          value: solid
+description: >-
+  A styled navigation link with glass or solid variants. Used in navigation
+  menus and as CTA buttons.
+useTeamPermissions: true
+slots: []
+titleParameter: text
+canBeComposition: false
+created: '2025-11-27T13:49:57.506207+00:00'
+updated: '2025-11-27T13:49:57.506207+00:00'

@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: footerLink
+name: Footer Link
+icon: screen
+parameters:
+  - id: text
+    name: Text
+    type: text
+    guidance: Link text (e.g., 'Privacy Policy', 'Contact Us')
+    localizable: true
+  - id: link
+    name: Link
+    type: link
+    guidance: URL or page this link navigates to
+description: A simple link component for footer navigation menus.
+useTeamPermissions: true
+slots: []
+titleParameter: text
+canBeComposition: false
+created: '2025-11-27T14:44:31.682389+00:00'
+updated: '2025-11-27T14:44:31.682389+00:00'

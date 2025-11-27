@@ -1,0 +1,29 @@
+composition:
+  _name: Journey Phase - 04 Base Camp
+  _id: 937d81ee-4026-4837-8759-0a52c5c8d2e0
+  type: journeyPhaseCard
+  parameters:
+    title:
+      type: text
+      value: Base Camp
+    number:
+      type: text
+      value: '04'
+    description:
+      type: text
+      value: >-
+        Spend the night at stunning campsites deep within the cave, where you
+        can relax and share stories with your group. After a restful evening,
+        prepare for the trek back, carrying unforgettable memories of your
+        underground adventure.
+  _overridability:
+    parameters:
+      title: 'yes'
+      number: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T14:49:08.620662+00:00'
+modified: '2025-11-27T14:49:08.620662+00:00'
+pattern: true

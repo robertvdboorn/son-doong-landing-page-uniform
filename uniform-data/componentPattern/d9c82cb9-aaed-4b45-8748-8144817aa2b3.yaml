@@ -1,0 +1,29 @@
+composition:
+  _name: Journey Phase - 03 Caving
+  _id: d9c82cb9-aaed-4b45-8748-8144817aa2b3
+  type: journeyPhaseCard
+  parameters:
+    title:
+      type: text
+      value: Caving
+    number:
+      type: text
+      value: '03'
+    description:
+      type: text
+      value: >-
+        Descend into the cave to witness colossal stalagmites, explore vast
+        chambers, and see the unique underground jungle. This phase immerses you
+        in a subterranean world filled with natural wonders and rare geological
+        formations.
+  _overridability:
+    parameters:
+      title: 'yes'
+      number: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T14:49:04.933386+00:00'
+modified: '2025-11-27T14:49:04.933386+00:00'
+pattern: true

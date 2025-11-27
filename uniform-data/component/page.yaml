@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: page
+name: Page
+icon: file-document
+parameters:
+  - id: 3169bf67-8227-40ca-af99-68961f63658c
+    name: Page Information
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - pageTitle
+  - id: pageTitle
+    name: Page Title
+    type: text
+    guidance: The title of the page
+    typeConfig: null
+    localizable: true
+  - id: 46fdcb16-f39d-47fd-a260-360c2d1780b3
+    name: Meta Information
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - metaDescription
+        - metaKeywords
+  - id: metaDescription
+    name: Meta Description
+    type: text
+    guidance: SEO meta description for search engines
+    typeConfig: null
+    localizable: true
+  - id: metaKeywords
+    name: Meta Keywords
+    type: text
+    guidance: SEO keywords separated by commas
+    typeConfig: null
+    localizable: true
+description: Base page component that serves as a composition container
+useTeamPermissions: true
+slots:
+  - id: header
+    name: Header
+    maxComponents: 1
+    allowedComponents:
+      - navigation
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: body
+    name: Body
+    allowedComponents:
+      - $test
+      - $localization
+      - $personalization
+      - $loop
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: footer
+    name: Footer
+    allowedComponents:
+      - footerSection
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: true
+created: '2025-11-27T13:43:49.643073+00:00'
+updated: '2025-11-27T14:53:59.048987+00:00'

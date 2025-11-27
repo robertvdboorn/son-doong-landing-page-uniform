@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: faqItem
+name: FAQ Item
+icon: screen
+parameters:
+  - id: question
+    name: Question
+    type: text
+    guidance: >-
+      The FAQ question (e.g., 'How long is the expedition?', 'What should I
+      bring?')
+    localizable: true
+  - id: answer
+    name: Answer
+    type: text
+    guidance: The detailed answer to the question (2-3 sentences recommended)
+    localizable: true
+description: >-
+  Individual FAQ question and answer accordion item. Must be used inside FAQ
+  Section component.
+useTeamPermissions: true
+slots: []
+titleParameter: question
+canBeComposition: false
+created: '2025-11-27T13:58:35.264025+00:00'
+updated: '2025-11-27T13:58:35.264025+00:00'

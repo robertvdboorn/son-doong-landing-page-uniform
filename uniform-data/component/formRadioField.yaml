@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: formRadioField
+name: Form Radio Field
+icon: screen
+parameters:
+  - id: name
+    name: Field Name
+    type: text
+    guidance: Unique identifier for this field (e.g., 'size', 'preference')
+  - id: label
+    name: Label
+    type: text
+    guidance: Label displayed above the radio buttons
+    localizable: true
+  - id: options
+    name: Options
+    type: contentReference
+    guidance: Add radio options as content references
+    typeConfig:
+      isMulti: true
+      allowedContentTypes:
+        - formRadioOption
+  - id: required
+    name: Required
+    type: checkbox
+    guidance: Whether this field must be filled out
+description: >-
+  Radio button field for forms. Add options as content references to
+  formRadioOption entries.
+useTeamPermissions: true
+slots: []
+titleParameter: name
+canBeComposition: false
+created: '2025-11-27T15:01:47.558632+00:00'
+updated: '2025-11-27T15:01:47.558632+00:00'

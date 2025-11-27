@@ -1,0 +1,35 @@
+composition:
+  _name: Features Section
+  _id: 2fa993b7-1834-4100-935e-4d7c009e4b35
+  type: featuresSection
+  parameters:
+    heading:
+      type: text
+      value: Why Choose Our Expeditions
+    subheading:
+      type: text
+      value: We provide world-class expertise, safety, and sustainability.
+  slots:
+    features:
+      - _id: d56c5729-0638-403c-931c-644ac51b0d2a
+        type: featureCard
+        _pattern: 15c26c46-01dc-4900-b631-7539031f6427
+      - _id: a72c1a85-4422-4844-b1f6-3cec1ef8dfcb
+        type: featureCard
+        _pattern: 46ddeab2-baff-4e16-ade9-bccdff83dc70
+      - _id: 5cfc2e74-e2b8-4290-abf9-07bc10b2235e
+        type: featureCard
+        _pattern: fffbafcc-7198-4147-b24f-f58b4af51caf
+      - _id: 61bbca1e-10f2-475d-bc45-67078f4e6808
+        type: featureCard
+        _pattern: 53c4242d-c370-467a-8ce2-39eb0c1e0f95
+  _overridability:
+    parameters:
+      heading: 'yes'
+      subheading: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T14:48:05.098553+00:00'
+modified: '2025-11-27T15:37:19.170925+00:00'
+pattern: true

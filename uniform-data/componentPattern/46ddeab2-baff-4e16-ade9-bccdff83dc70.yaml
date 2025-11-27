@@ -1,0 +1,23 @@
+composition:
+  _name: Feature - Expert-Led Tours
+  _id: 46ddeab2-baff-4e16-ade9-bccdff83dc70
+  type: featureCard
+  parameters:
+    title:
+      type: text
+      value: Expert-Led Tours
+    description:
+      type: text
+      value: >-
+        Experience expert-led exploration with guidance from geologists, cavers,
+        and local specialists.
+  _overridability:
+    parameters:
+      title: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T14:46:47.200346+00:00'
+modified: '2025-11-27T14:46:47.200346+00:00'
+pattern: true

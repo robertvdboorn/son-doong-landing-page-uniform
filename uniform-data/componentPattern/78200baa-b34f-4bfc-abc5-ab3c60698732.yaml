@@ -1,0 +1,156 @@
+composition:
+  _name: Footer Section
+  _id: 78200baa-b34f-4bfc-abc5-ab3c60698732
+  type: footerSection
+  parameters:
+    brandName:
+      type: text
+      value: Son Doong Expeditions
+    copyright:
+      type: text
+      value: © 2024 Son Doong Expeditions. All rights reserved.
+    showNewsletter:
+      type: checkbox
+      value: 'true'
+    newsletterTitle:
+      type: text
+      value: Get Expedition Updates
+    brandDescription:
+      type: text
+      value: >-
+        Explore the extraordinary. Discover new experiences, connect with
+        inspiring stories, and unlock a world of possibilities with us.
+    newsletterButtonText:
+      type: text
+      value: Subscribe
+    newsletterPlaceholder:
+      type: text
+      value: Enter your email
+  slots:
+    linkSections:
+      - _id: 15a956eb-62a3-42db-aabf-6fd70dfbb6cd
+        type: footerLinkSection
+        slots:
+          links:
+            - _id: 52c8e0b4-1637-446f-83e2-47c7f39e7713
+              type: footerLink
+              parameters:
+                text:
+                  type: text
+                  locales:
+                    en-US: Itinerary
+            - _id: e218779a-b75f-4e76-8860-75953d12f398
+              type: footerLink
+              parameters:
+                text:
+                  type: text
+                  locales:
+                    en-US: Pricing
+            - _id: b0a650ee-56d8-45b4-8a6d-8918d47bebfb
+              type: footerLink
+              parameters:
+                text:
+                  type: text
+                  locales:
+                    en-US: Gear List
+            - _id: 64f114e4-65d8-4172-9889-aa58ea493b05
+              type: footerLink
+              parameters:
+                text:
+                  type: text
+                  locales:
+                    en-US: Photo Gallery
+        parameters:
+          title:
+            type: text
+            locales:
+              en-US: EXPEDITION
+      - _id: 557f115b-b817-4ba6-9497-9ac62e67b3ae
+        type: footerLinkSection
+        slots:
+          links:
+            - _id: 7c1807a2-2836-4cf6-8dc2-a169ff0cc2ea
+              type: footerLink
+              parameters:
+                text:
+                  type: text
+                  locales:
+                    en-US: Our Mission
+            - _id: e015ff5a-74b0-4748-9d2a-7207bd28f493
+              type: footerLink
+              parameters:
+                text:
+                  type: text
+                  locales:
+                    en-US: Safety Standards
+            - _id: 81bf5692-d116-4b39-814c-52c4c4b90137
+              type: footerLink
+              parameters:
+                text:
+                  type: text
+                  locales:
+                    en-US: Our Team
+            - _id: ef7d6dd5-cdbb-40cd-a25a-491eb89c8e99
+              type: footerLink
+              parameters:
+                text:
+                  type: text
+                  locales:
+                    en-US: Conservation
+        parameters:
+          title:
+            type: text
+            locales:
+              en-US: ABOUT
+      - _id: cb796f37-7b9a-4be2-abf7-e87772e3601b
+        type: footerLinkSection
+        slots:
+          links:
+            - _id: f040a5f5-d5ef-40ce-b5d1-d89474ea314f
+              type: footerLink
+              parameters:
+                text:
+                  type: text
+                  locales:
+                    en-US: Help Center
+            - _id: 33adee01-988b-4b29-9694-7e45c0b4b1a1
+              type: footerLink
+              parameters:
+                text:
+                  type: text
+                  locales:
+                    en-US: Contact Us
+            - _id: 7ea6fad4-dd5e-4fc7-8086-7b7873b838a7
+              type: footerLink
+              parameters:
+                text:
+                  type: text
+                  locales:
+                    en-US: FAQ
+            - _id: 22e88804-ccfe-4578-8917-007d85fef3bf
+              type: footerLink
+              parameters:
+                text:
+                  type: text
+                  locales:
+                    en-US: Terms & Conditions
+        parameters:
+          title:
+            type: text
+            locales:
+              en-US: RESOURCES
+  _overridability:
+    parameters:
+      brandName: 'yes'
+      copyright: 'yes'
+      showNewsletter: 'yes'
+      newsletterTitle: 'yes'
+      brandDescription: 'yes'
+      newsletterButtonText: 'yes'
+      newsletterPlaceholder: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T14:53:02.939667+00:00'
+modified: '2025-11-27T15:37:15.923727+00:00'
+pattern: true

@@ -1,0 +1,29 @@
+composition:
+  _name: Journey Phase - 02 The Trek
+  _id: 139497ae-ccd2-4c7c-ac2f-e272d058e4fe
+  type: journeyPhaseCard
+  parameters:
+    title:
+      type: text
+      value: The Trek
+    number:
+      type: text
+      value: '02'
+    description:
+      type: text
+      value: >-
+        Hike through pristine jungle, cross rivers, and camp in remote locations
+        as you make your way toward the entrance of Son Doong. This challenging
+        journey immerses you in the wild beauty of the region and sets the stage
+        for the adventure ahead.
+  _overridability:
+    parameters:
+      title: 'yes'
+      number: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T14:49:01.465783+00:00'
+modified: '2025-11-27T14:49:01.465783+00:00'
+pattern: true

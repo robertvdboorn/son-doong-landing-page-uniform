@@ -1,0 +1,157 @@
+composition:
+  _name: Contact Section
+  _id: 68c06fcd-5095-49ac-84e8-3ed86aa53bb8
+  type: contactSection
+  parameters:
+    heading:
+      type: text
+      value: Contact Our Team
+    description:
+      type: text
+      value: >-
+        For questions about private tours, partnerships, or media inquiries,
+        please get in touch. We reply within one business day.
+  slots:
+    leftColumn:
+      - _id: b20d30e3-88e8-46b4-b897-135bdb428629
+        type: contactForm
+        slots:
+          formFields:
+            - _id: 47df9011-f8ac-428a-8e28-432942e8673f
+              type: formTextField
+              parameters:
+                name:
+                  type: text
+                  value: name
+                label:
+                  type: text
+                  locales:
+                    en-US: Name
+                required:
+                  type: checkbox
+                  value: 'true'
+                placeholder:
+                  type: text
+                  locales:
+                    en-US: Your name
+            - _id: 9e181971-8201-4291-82da-47c0e7973003
+              type: formTextField
+              parameters:
+                name:
+                  type: text
+                  value: email
+                type:
+                  type: select
+                  value: email
+                label:
+                  type: text
+                  locales:
+                    en-US: Email
+                required:
+                  type: checkbox
+                  value: 'true'
+                placeholder:
+                  type: text
+                  locales:
+                    en-US: your.email@example.com
+            - _id: 777976b3-85bd-431d-90a0-b01bbda17608
+              type: formTextField
+              parameters:
+                name:
+                  type: text
+                  value: message
+                rows:
+                  type: select
+                  value: '7'
+                label:
+                  type: text
+                  locales:
+                    en-US: Message
+                required:
+                  type: checkbox
+                  value: 'true'
+                placeholder:
+                  type: text
+                  locales:
+                    en-US: Your message...
+          formButtons:
+            - _id: 889d443e-5305-4c2f-93f6-dc102ba0459c
+              type: formButton
+              parameters:
+                label:
+                  type: text
+                  locales:
+                    en-US: Send Message
+        parameters:
+          title:
+            type: text
+            locales:
+              en-US: Send Inquiry
+          formIdentifier:
+            type: text
+            value: contact-inquiry
+    rightColumn:
+      - _id: b4cbded9-2e86-45ce-8c53-7ec04e7b6ca6
+        type: contactCard
+        parameters:
+          bio:
+            type: text
+            locales:
+              en-US: >-
+                With over 15 years of caving experience and intimate knowledge
+                of Son Doong, David leads our expeditions with a deep passion
+                for conservation and adventure. He is dedicated to sharing the
+                cave’s wonders while preserving its pristine ecosystem.
+          name:
+            type: text
+            locales:
+              en-US: David Luong
+          role:
+            type: text
+            locales:
+              en-US: Lead Expedition Guide
+          image:
+            type: asset
+            value:
+              - _id: dd22d939-9b49-4971-ab6e-146233697248
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: 5cd2de3c-b344-454c-969c-285bae0dab95
+                  url:
+                    value: >-
+                      https://img.eu.uniform.global/p/phDRt_FTRZiOQNJoKIm4_g/S-JqcSODTI-PkNA-93yXsg-david-luong.jpg
+                    type: text
+                  file:
+                    type: file
+                    value: f29560eb-2ca9-4b19-a2ef-81fa45c56b7d
+                  size:
+                    value: 202190
+                    type: number
+                  title:
+                    type: text
+                    value: david-luong.jpg
+                  width:
+                    value: 1500
+                    type: number
+                  height:
+                    value: 1000
+                    type: number
+                  mediaType:
+                    value: image/jpeg
+                    type: text
+                _source: uniform-assets
+  _overridability:
+    parameters:
+      heading: 'yes'
+      contactBio: 'yes'
+      contactName: 'yes'
+      contactRole: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T14:49:49.169681+00:00'
+modified: '2025-11-27T15:37:15.0903+00:00'
+pattern: true

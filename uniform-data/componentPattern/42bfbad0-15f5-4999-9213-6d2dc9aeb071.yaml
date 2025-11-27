@@ -1,0 +1,52 @@
+composition:
+  _name: Journey Section
+  _id: 42bfbad0-15f5-4999-9213-6d2dc9aeb071
+  type: journeySection
+  parameters:
+    heading:
+      type: text
+      value: Your Epic Journey
+    subheading:
+      type: text
+      value: >-
+        From jungle treks to underground camps, discover each phase of the
+        adventure and what awaits you along the way.
+  slots:
+    cta:
+      - _id: d4117170-495f-43bd-9fbe-e7f9b4ec2864
+        type: ctaButton
+        parameters:
+          size:
+            type: select
+            value: lg
+          text:
+            type: text
+            locales:
+              en-US: Check Availability
+          variant:
+            type: select
+            value: primary
+    phases:
+      - _id: f25f7fe3-954c-4787-8c17-418a3dd5ce52
+        type: journeyPhaseCard
+        _pattern: 76b06c94-7bbb-4a0a-b1ef-1a916b869e05
+      - _id: 3a1579d2-8aa8-4853-8a3d-f8f16b5f8d08
+        type: journeyPhaseCard
+        _pattern: 139497ae-ccd2-4c7c-ac2f-e272d058e4fe
+      - _id: 5fffe7e8-858c-4a60-a944-a4c59a4eb61a
+        type: journeyPhaseCard
+        _pattern: d9c82cb9-aaed-4b45-8748-8144817aa2b3
+      - _id: e55e2c74-5886-4d46-947f-0100cc35d81c
+        type: journeyPhaseCard
+        _pattern: 937d81ee-4026-4837-8759-0a52c5c8d2e0
+  _overridability:
+    parameters:
+      ctaText: 'yes'
+      heading: 'yes'
+      subheading: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T14:49:35.703034+00:00'
+modified: '2025-11-27T15:37:20.969389+00:00'
+pattern: true

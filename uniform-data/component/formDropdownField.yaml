@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: formDropdownField
+name: Form Dropdown Field
+icon: screen
+parameters:
+  - id: name
+    name: Field Name
+    type: text
+    guidance: Unique identifier for this field (e.g., 'country', 'product-category')
+  - id: label
+    name: Label
+    type: text
+    guidance: Label displayed above the dropdown
+    localizable: true
+  - id: options
+    name: Options
+    type: contentReference
+    guidance: Add dropdown options as content references
+    typeConfig:
+      isMulti: true
+      allowedContentTypes:
+        - formDropdownOption
+  - id: required
+    name: Required
+    type: checkbox
+    guidance: Whether this field must be filled out
+description: >-
+  Dropdown/select field for forms. Add options as content references to
+  formDropdownOption entries.
+useTeamPermissions: true
+slots: []
+titleParameter: name
+canBeComposition: false
+created: '2025-11-27T15:01:45.52964+00:00'
+updated: '2025-11-27T15:01:45.52964+00:00'

@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: form
+name: Form
+icon: screen
+parameters:
+  - id: formName
+    name: Form Name
+    type: text
+    guidance: Display name of the form shown to users
+  - id: formIdentifier
+    name: Form Identifier
+    type: text
+    guidance: >-
+      Unique identifier for this form (e.g., 'contact-form',
+      'newsletter-signup')
+  - id: formActions
+    name: Form Actions
+    type: contentReference
+    guidance: >-
+      Actions to trigger on form submission (e.g., set quirks for
+      personalization)
+    typeConfig:
+      isMulti: true
+      allowedContentTypes:
+        - formSetQuirkAction
+description: >-
+  Dynamic form builder with customizable fields. Add fields via slots and
+  configure form submission handling.
+useTeamPermissions: true
+slots:
+  - id: formFields
+    name: Form Fields
+    maxComponents: 20
+    allowedComponents:
+      - formTextField
+      - formCheckboxField
+      - formDropdownField
+      - formRadioField
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+  - id: formButtons
+    name: Form Buttons
+    maxComponents: 3
+    minComponents: 1
+    allowedComponents:
+      - formButton
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: formName
+canBeComposition: false
+created: '2025-11-27T15:01:37.902896+00:00'
+updated: '2025-11-27T15:03:02.248808+00:00'

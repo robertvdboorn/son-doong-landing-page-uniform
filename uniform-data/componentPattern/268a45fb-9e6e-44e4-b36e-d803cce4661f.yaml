@@ -1,0 +1,77 @@
+composition:
+  _name: Main Navigation
+  _id: 268a45fb-9e6e-44e4-b36e-d803cce4661f
+  type: navigation
+  parameters:
+    ctaText:
+      type: text
+      value: Book Now
+    logoText:
+      type: text
+      value: Son Doong Expeditions
+    showAuth:
+      type: checkbox
+      value: 'true'
+  slots:
+    navigationLinks:
+      - _id: 18d1b3af-725b-4b62-a8a4-32ab4f9f7751
+        type: navLink
+        parameters:
+          text:
+            type: text
+            locales:
+              en-US: The Expedition
+          variant:
+            type: select
+            value: glass
+      - _id: 5b9a0fb3-f146-44b9-83e1-a2220432f576
+        type: navLink
+        parameters:
+          text:
+            type: text
+            locales:
+              en-US: Safety
+          variant:
+            type: select
+            value: glass
+      - _id: 70199328-c3b1-4a9b-bf3e-3d8191cfbeab
+        type: navLink
+        parameters:
+          text:
+            type: text
+            locales:
+              en-US: Gallery
+          variant:
+            type: select
+            value: glass
+      - _id: 48b3931d-efec-498c-a8b4-9b81230fd66f
+        type: navLink
+        parameters:
+          text:
+            type: text
+            locales:
+              en-US: FAQ
+          variant:
+            type: select
+            value: glass
+      - _id: 79d47973-6080-447a-bca9-8cf201c6abdb
+        type: navLink
+        parameters:
+          text:
+            type: text
+            locales:
+              en-US: Contact
+          variant:
+            type: select
+            value: glass
+  _overridability:
+    parameters:
+      ctaText: 'yes'
+      logoText: 'yes'
+      showAuth: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2025-11-27T13:50:56.501358+00:00'
+modified: '2025-11-27T15:37:17.457424+00:00'
+pattern: true

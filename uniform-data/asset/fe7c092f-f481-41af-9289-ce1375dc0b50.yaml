@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: fe7c092f-f481-41af-9289-ce1375dc0b50
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: son-doong.jpg
+    file:
+      type: file
+      value: fc9a8601-5029-437e-9bdd-1e8781616dcb
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.eu.uniform.global/p/phDRt_FTRZiOQNJoKIm4_g/Bp4XLVxZTAyoC8qCStaV-A-son-doong.jpg
+      type: text
+    size:
+      value: 848184
+      type: number
+    width:
+      value: 1500
+      type: number
+    height:
+      value: 1000
+      type: number
+    custom: {}
+created: '2025-11-27T13:56:04.20786+00:00'
+modified: '2025-11-27T13:56:04.20786+00:00'

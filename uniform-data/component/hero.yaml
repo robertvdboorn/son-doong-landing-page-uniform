@@ -1,0 +1,118 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: hero
+name: Hero
+icon: screen
+parameters:
+  - id: backgroundImage
+    name: Background Image
+    type: asset
+    guidance: >-
+      High-resolution background image (recommended: 1920x1080px minimum). Use
+      focal point to control which part of the image is most visible.
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: badgeIcon
+    name: Badge Icon
+    type: select
+    guidance: Icon to display in the badge (e.g., Leaf for nature, Shield for safety)
+    typeConfig:
+      options:
+        - text: Leaf
+          value: Leaf
+        - text: Shield
+          value: Shield
+        - text: Star
+          value: Star
+        - text: Heart
+          value: Heart
+        - text: Award
+          value: Award
+        - text: Check Circle
+          value: CheckCircle
+        - text: Sparkles
+          value: Sparkles
+        - text: Zap
+          value: Zap
+  - id: badgeText
+    name: Badge Text
+    type: text
+    guidance: >-
+      Short text for the badge above the headline (e.g., 'Limited Time', 'New',
+      'Featured')
+    localizable: true
+  - id: showBadge
+    name: Show Badge
+    type: checkbox
+    guidance: Whether to display the badge
+  - id: title
+    name: Title
+    type: text
+    guidance: Large, impactful headline (2-5 words recommended for maximum impact)
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: >-
+      Compelling description below the headline (1-2 sentences, max 150
+      characters)
+    localizable: true
+  - id: footerNoteIcon
+    name: Footer Note Icon
+    type: select
+    guidance: >-
+      Icon to display in the footer note (e.g., Shield for safety, Info for
+      information)
+    typeConfig:
+      options:
+        - text: Leaf
+          value: Leaf
+        - text: Shield
+          value: Shield
+        - text: Star
+          value: Star
+        - text: Heart
+          value: Heart
+        - text: Award
+          value: Award
+        - text: Check Circle
+          value: CheckCircle
+        - text: Info
+          value: Info
+  - id: footerNote
+    name: Footer Note
+    type: text
+    guidance: >-
+      Small text displayed at the bottom of the hero (e.g., 'Eco-friendly
+      expeditions', 'Limited spots available')
+    localizable: true
+  - id: showFooterNote
+    name: Show Footer Note
+    type: checkbox
+    guidance: Whether to display the footer note
+description: >-
+  Full-screen hero section with dramatic background image, gradient overlay, and
+  centered content. Perfect for creating stunning first impressions on landing
+  pages.
+useTeamPermissions: true
+slots:
+  - id: primaryCta
+    name: Primary CTA
+    maxComponents: 1
+    allowedComponents:
+      - ctaButton
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: secondaryCta
+    name: Secondary CTA
+    maxComponents: 1
+    allowedComponents:
+      - ctaButton
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: badgeText
+thumbnailParameter: backgroundImage
+canBeComposition: false
+created: '2025-11-27T13:54:24.501174+00:00'
+updated: '2025-11-27T15:23:05.226679+00:00'
